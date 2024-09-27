@@ -1,0 +1,44 @@
+transform이란?
+해당 요소에 회전, 크기 조절, 기울이기, 이동효과를 부여할 수 있는 속성
+
+1. translate(좌우, 상하) : px, %
+- 위치를 조정하는 속성
+
+2. scale() : 0 ~ 1
+- 요소의 크기를 조절하는 속성
+
+3. rotate() : %, deg
+- 요소의 각도를 조절하는 속성
+
+4. skew() : deg
+- 요소의 비틀기를 조절하는 속성
+
+5. 여러개 전달 시 사용하는 예시
+- ex) transform : scale(0.5) translate(100px, 100px);
+
+
+-------------------------------------------------------------------------
+애니메이션(Animation)
+animation : 아래 순서대로;
+animation-name 
+animation-duration
+- 전환시 얼마를 거쳐 사용할 지 지정하는 속성
+animation-timing-function
+   animation-timing-function: ease;
+   animation-timing-function: ease-in;
+   animation-timing-function: ease-out;
+   animation-timing-function: ease-in-out;
+   animation-timing-function: linear;
+   animation-timing-function: step-start;
+   animation-timing-function: step-end;
+
+animation-delay
+animation-iteration-count
+- 0,1,2...infinite, 
+animation-direction (잘 사용안함)
+animation-fill-mode
+animation-fill-mode: none;
+animation-fill-mode: forwards;
+animation-fill-mode: backwards;
+animation-fill-mode: both;
+

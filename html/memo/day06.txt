@@ -1,0 +1,74 @@
+폰트 패밀리(font-family)
+- 프론트 개발자는 사용자에게 편의한 서비스를 제공해야하기 때문에 폰트,
+즉 UI 디자인과도 연관이 많다. 가독성이 조은 폰트를 제공한다는 것은 굉장히 중요하다.
+
+font-weight(100~900)
+- 100 : thin
+- 400 : regular(default)
+- 700 : bold
+- 900 : extra bold
+
+font-size(절대, 상대)
+절대 : 1px
+상대 : em, rem
+
+-----------------------------------------------------------------------------
+color : 텍스트 색상을 변경한다.
+
+letter-spacing : 자간, 문자 단위 간격
+
+word-spacing : 단어 사이 간격
+
+text-align : 텍스트의 정렬 ( left, right, center )
+
+line-height : 행간 (줄과 줄 사이 간격)
+
+text-indent : 첫 줄 들여쓰기
+
+text-decoration : 텍스트의 여러 효과 ( under-line, line-through )
+
+font-variant : 소문자를 더 작은 크기의 대문자로 변환
+
+text-shadow : 텍스트의 그림자 효과
+
+white-space : 띄어쓰기, 줄바꿈등을 어떻게 할지 여부
+
+text-overflow : ellipsis
+
+- 조건 사이즈가 더 작아야한다.
+- `white-space: nowrap;`
+- `overflow: hidden;`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

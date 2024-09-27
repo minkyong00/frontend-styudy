@@ -1,0 +1,86 @@
+미디어 쿼리
+단말기의 유형에 따라 화면에 해상도가 다르므로,
+사용자가 보고 있는 뷰 포트에 따라서 다른 유형의 화면(레이아웃)을 보여주는 쿼리
+
+미디어 쿼리의 선언
+	@media [media-type] (조건) [media-feature-rule] (조건), ... {
+		스타일
+	}
+
+미디어 타입의 종류
+	all, braille, embossed, handheld, print, projectionm, screen, speech, tv, ..
+	*all, screen(화면), print*
+
+미디어 타입의 조건식
+	and, or, not
+
+-------------------------------------------------------------------------------------------
+디스플레이 그리드
+	그리드는 수평선과 수직선으로 이루어진 집합체로, 디자인 요소를 정렬할 수 있는 대상 패턴을
+	생성하여 페이지에서 페이지로 이동할 때 요소가 바뀌지 않는 디자인 생성에 도움을 주어 웹 사이트의
+	일관성을 높이는 전시 방법이다.
+
+	하나의 그리드는 대게 colums, rows로 구성되며, 각 행과 열 상이에 공백이 있는데,
+	이를 일컬어 gutters라고 부른다
+
+grid-gap 
+	grid-row-gap : 행 gap
+	grid-column-gap : 열 gap
+	grid-gap 또는 gap : 행과 열
+
+부모 grid
+	grid-template-columns(열의 개수)
+	- 100px 100px 100px
+	- 20% 20% 20%
+	- 1fr 1fr 1fr(분수) (3등분)
+	- repeat(3, 1fr)
+	
+	grid-template-rows(행의 개수)
+	- 100px 100px 100px
+	- 1fr 1fr 1fr 1fr (4등분)
+	- 1fr auto 1r
+	
+	grid-auto-rows : 각 줄당 지정해줄 크기를 자동으로 부여한다.
+
+자식 grid-cell
+	자식 요소가 차지할 셀의 영역을 라인을 기준으로 지정하는 방법
+
+grid-columns-start : 1
+grid-columns-end : 2
+grid-column : 1 / 2
+grid-colums : 1 / span 2 (차지할 공간의 개수)
+
+grid-row-start : 1
+grid-row-end : 2
+grid-row : 1 / 2
+
+
+부모에게 들어가는 속성
+grid-template-areas:
+'이름 이름 이름'
+'이름 이름 이름'
+
+grid-template-columns:repeat(3, 1fr);
+grid-template-rows:rpeat(3, 1fr);
+
+자식에게 들어가는 속성
+grid-area : a;
+
+grid-template:
+'이름 이름 이름' 100px
+'이름 이름 이름' 100px
+'이름 이름 이름' / 1f 1f 2f
+/ 1fr 1fr 2fr
+
+
+
+
+
+
+
+
+
+
+
+
+

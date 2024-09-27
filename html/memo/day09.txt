@@ -1,0 +1,46 @@
+메인축 정렬
+justify-content : flex 기본 축과 인라인 축 사이 공간을 어떻게 배치할 지 정하는 속성
+
+크로스축 정렬(Cross axis)
+align-items : 반대 기준점에서 어떻게 배치할 지 정하는 속성
+
+align-content : 반대축에서 사이의 아이템을 어떻게 배치할 지 정하는 속성
+align-self : 하나만 지정을 따로 하여 반대축 정렬을 정의하고 싶을 때 정하는 속성
+
+flex-flow : flex && flex-wrap && flex-direction;
+ex) flex-flow : column nowrap;
+
+gap : flex 사이의 요소마다 줄 수 있는 간격을 정의할 때 사용하는 속성
+- row gap : 행의 간격
+- column gap : 열의 간격
+
+flex-grow : 남은 공간을 얼마만큼 차지할 지 정하는 속성, default = 0
+flex-shrink : 축소 요소를 설정하는 속성
+flex-basis : 아이템의 브라우저 width에 따른 비율을 정하는 속성
+flex : 1; 
+
+-----------------------------------------------------------------------------------
+position(포지션)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
