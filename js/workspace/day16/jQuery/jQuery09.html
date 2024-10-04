@@ -4,8 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>jQuery 종합 실습</title>
+  <style>
+    table {
+      position: relative;
+      left: 5%;
+    }
+
+    h3 {
+      position: relative;
+      left: 6%;
+      margin: 0;
+    }
+
+    thead tr {
+      background-color: bisque;
+    }
+
+    fieldset {
+      position: relative;
+      left: 2%;
+      width: 45px;
+    }
+
+  </style>
 </head>
 <body>
+<div>
+  <h3>요금표</h3>
   <table border="1">
     <thead>
       <tr>
@@ -14,26 +39,43 @@
       </tr>
     </thead>
     <tbody>
-      <th>
-        <td>청소년</td>
+      <tr>
+        <td>아동</td>
+        <td>무료</td>
+      </tr>
+      <tr id="teenager">
+        <td id="star">청소년</td>
         <td>2000</td>
-      </th>
-      <th>
-        <td>성인</td>
-        <td>5000</td>
-      </th>
-    </tbody>
-  </table>
-
-  <fieldset>
-    <legend>구분</legend>
-    <input type="text" id="input" />
-    <input type="button" value="확인" />
-  </fieldset>
+        <tr>
+          <td>성인</td>
+          <td>5000</td>
+        </tr>
+      </tbody>
+    </table>
+    <fieldset>
+      <legend>구분</legend>
+      <input type="text" id="input" />
+      <br>
+      <input type="button" value="확인" />
+    </fieldset>
+  </div>
   
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
+  const $input = $("#input");
+  const $button = $("input[type='button']");
+  const $teen = $("#teenager");
+  const $star = $("#star");
 
+  $button.on("click", (e) => {
+    const check = $input.val() === "청소년";
+    if(!check){
+      alert("다시 입력해주세요");
+    }else{
+      $star.text("★청소년");
+      $teen.css("background-color", "red");
+    }
+  })
 </script>
 </html>
