@@ -3,30 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
   <title>jQuery 종합 실습</title>
-  <style>
-    table {
-      position: relative;
-      left: 5%;
-    }
-
-    h3 {
-      position: relative;
-      left: 6%;
-      margin: 0;
-    }
-
-    thead tr {
-      background-color: bisque;
-    }
-
-    fieldset {
-      position: relative;
-      left: 2%;
-      width: 45px;
-    }
-
-  </style>
 </head>
 <body>
 <div>
@@ -59,23 +37,7 @@
       <input type="button" value="확인" />
     </fieldset>
   </div>
-  
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script>
-  const $input = $("#input");
-  const $button = $("input[type='button']");
-  const $teen = $("#teenager");
-  const $star = $("#star");
-
-  $button.on("click", (e) => {
-    const check = $input.val() === "청소년";
-    if(!check){
-      alert("다시 입력해주세요");
-    }else{
-      $star.text("★청소년");
-      $teen.css("background-color", "red");
-    }
-  })
-</script>
+<script src="../js/jscipt.js"></script>
 </html>
